@@ -6,29 +6,29 @@ public class Date {
       private int day;
       private int year; //a four digit number.
 
-      public Date( )
+      public void Date( )
       {
           month = "January";
           day = 1;
           year = 1000;
       }
 
-      public Date(int monthInt, int day, int year)
+      public void Date(int monthInt, int day, int year)
       {
           setDate(monthInt, day, year);
       }
 
-      public Date(String monthString, int day, int year)
+      public void Date(String monthString, int day, int year)
       {
           setDate(monthString, day, year);
       }
 
-      public Date(int year)
+      public void Date(int year)
       {
           setDate(1, 1, year);
       }
 
-      public Date(Date aDate)
+      public void Date(Date aDate)
       {
           if (aDate == null)//Not a real date.
           {
